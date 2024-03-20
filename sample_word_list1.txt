@@ -1,0 +1,7 @@
+start
+here
+then
+# ignore this
+# and this
+finally
+finish

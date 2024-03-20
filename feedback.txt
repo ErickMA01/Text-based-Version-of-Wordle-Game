@@ -1,0 +1,12 @@
+Good start.  
+
+One small bug:  The "letter status" should be cumulative: It should reflect
+all previous guesses, not just the most recent.
+
+==== 
+
+Small bug fixed.
+
+Overall, very good project.
+
+(m)

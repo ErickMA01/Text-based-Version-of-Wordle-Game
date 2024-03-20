@@ -1,0 +1,84 @@
+
+# Wordle end-to-end tests
+
+Scenario 1:
+    User makes a sequence of guesses and wins the game in four steps:
+Input Sequence:
+    audio
+    stern
+    glyph
+    audit
+Watch for:
+    Message indicating that the user wins the game.
+
+
+Scenario 2:
+    User enters words that have fewer than 5 letters
+Input Sequence:
+    audio
+    safe
+    step
+    stop
+    stomp
+Watch For:
+    Error message indicating required word length.
+    Ability to continue game after entering 5-letter word
+
+
+Scenario 3:
+    User enters words that are all not equal to the target.
+Input sequence:
+    money
+    month
+    puppy
+    happy
+    socks
+    sorry
+watch for:
+    Message indicating that the user is out of guesses
+
+
+Scenario 4:
+    User enters first word and wins on first guess.
+Input sequence:
+    money
+watch for:
+    Congratulations message indicating that the user has won.
+
+
+Scenario 5:
+    User enters first word and the word is not a real word.
+Input sequence:
+    mnopq
+watch for:
+    Error message indicating the word is not a valid word.
+
+
+Scenario 6:
+    User enters words that have more than 5 letters
+Input Sequence:
+    outliers
+    combine
+    reboot
+    cricket
+    stomp
+Watch For:
+    Error message indicating required word length.
+    Ability to continue game after entering 5-letter word
+
+
+Scenario 7:
+    User enters no word.
+Input sequence:
+    " "
+watch for:
+    Error message indicating the word is not a valid word.
+
+
+Scenario 8:
+    User enters numbers instead of a word.
+Input sequence:
+    12345
+watch for:
+    Error message indicating the word is not a valid word.
+
